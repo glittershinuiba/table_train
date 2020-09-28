@@ -1,6 +1,15 @@
 .App {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+
+  background-color: #282c34;
+  min-height: 100vh;
 }
+
+.bad{
+  color: red;
+}
+
 
 .App-logo {
   height: 40vmin;
@@ -15,18 +24,66 @@
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
+  
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  align-items: left;
+  justify-content: left;
   font-size: calc(10px + 2vmin);
   color: white;
+  text-align: left;
+  
+}
+.table{
+  border:1px solid rgb(107, 90, 90);
+  border-radius: 4px;
+  text-align: center;
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+table{
+  border-collapse:collapse;
+  min-width: 50%;
+  margin: 10px;
+ 
+}
+th{
+  height: 50px;
+  background-color: #535457;
+}
+tr:hover {background-color: #635f5f;}
+
+.addStudent{
+  text-align: left;
+}
+.home{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color:#282c34;;
+  color: white;
+  
 }
 
 .App-link {
   color: #61dafb;
+  
 }
+dialog{
+  background-color: rgb(88, 122, 120);
+}
+.submit{
+
+  border:1px solid rgb(151, 115, 115);
+  border-radius: 4px;
+  min-width: 320px;
+  
+}
+
 
 @keyframes App-logo-spin {
   from {
